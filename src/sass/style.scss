@@ -185,7 +185,7 @@ body {
 .page-title {
 	text-transform: uppercase;
 	text-align: center;
-	padding: .5em;
+	padding: 0.5em;
 	font-size: 1.8rem;
 }
 .page2 {
@@ -204,16 +204,20 @@ body {
 		justify-content: center;
 		align-items: center;
 		background-color: rgba(255, 255, 255, 0.479);
+		transition: display .3s;
 		&-closebtn {
-			position: absolute; 
+			position: absolute;
 			top: 0;
 			right: 0;
-			padding:0.5em 1em;
+			padding: 0.5em 1em;
 			background: none;
 			border: none;
 			font-size: 2rem;
 			cursor: pointer;
 			color: #fff;
+			&:hover {
+				color: #000;
+			}
 		}
 	}
 	&-title {
@@ -268,11 +272,21 @@ body {
 	}
 }
 
-.green{color: #6ff96f;}
-	.blue{color: #4cd3fe;}
-	.violet{color:#e8aeff;}
-	.yellow{color:yellow;}
-	.grey{color:#c0c0c0;}
+.green {
+	color: #6ff96f;
+}
+.blue {
+	color: #4cd3fe;
+}
+.violet {
+	color: #e8aeff;
+}
+.yellow {
+	color: yellow;
+}
+.grey {
+	color: #c0c0c0;
+}
 
 .movie-active {
 	display: flex;
@@ -282,28 +296,57 @@ body {
 	flex-direction: column;
 	&-main {
 		display: flex;
-		img {
-			height: 70%;
+		&-img-box {
+			position: relative;
+			img {
+				position: relative;
+				height: 50%;
+				margin-left: 1em;
+				z-index: 2;
+			}
+			&-circle {
+				position: absolute;
+				top: 12%;
+				left: 50%;
+				transform: translate(-50%, 0) scale(0);
+				width: 50%;
+				height: 25%;
+				border-radius: 50%;
+				border: 3px solid rgb(249, 124, 0);
+				background-color: rgb(255, 172, 89);
+				animation: magnetic-field 2s infinite;
+				z-index: 0;
+			}
 		}
 		&-box {
 			position: relative;
 			// display: flex;
 			// flex-direction: column;
 			// justify-content: space-between;
-	
+
 			&-text {
-				margin: 0 3em;
-				font-size: 1.4rem;
+				margin: 0 2em;
+				font-size: 1.2rem;
 				text-align: justify;
 				font-weight: 600;
+				background-color: #fff;
+				padding: 0.5em;
+				border-radius: 8px;
 			}
 			img {
 				position: absolute;
-				bottom: 140px;
+				bottom: 300px;
 				right: 0;
-				height:50%;
-				filter: opacity(.5);
+				height: 30%;
+				filter: opacity(0.5);
 			}
 		}
+	}
+}
+
+@keyframes magnetic-field {
+	100% {
+		transform: translate(-50%, 0) scale(2);
+		opacity: 0;
 	}
 }
