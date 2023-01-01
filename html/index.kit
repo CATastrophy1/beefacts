@@ -14,16 +14,19 @@
 <body>
 
     <div class="wrapper">
+        <div class="margin">
         <h1 class="title">bee facts 🐝
         </h1>
         <div class="pages">
-        <div class="page page1 active-page " data-number="1">
+            
+        <div class="page page1  " data-number="1">
             <!-- @include 'page1.kit' -->
         </div>
         <div class="page page2 "data-number="2">
             <!-- @include 'page2.kit' -->
         </div>
-        <div class="page page3"data-number="3">
+        <div class="page page3 active-page"data-number="3">
+            <!-- @include 'page3.kit' -->
         </div>
         <div class="page page4"data-number="4">
         </div>
@@ -50,6 +53,7 @@
        
         <button class="next-btn btn"><ion-icon name="caret-forward-outline"></ion-icon></button>
        </div>
+    </div>
     </div>
     <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
 <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>

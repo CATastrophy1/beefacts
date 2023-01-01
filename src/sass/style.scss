@@ -23,8 +23,15 @@ body {
 
 	margin: 0 auto;
 	width: 100vw;
-	max-width: 1000px;
+	max-width: 800px;
 }
+
+// .margin {
+// 	// position: absolute;
+// 	width: 100%;
+// 	// height: 100%;
+// 	margin: 1em;
+// }
 
 .title {
 	text-align: center;
@@ -37,7 +44,7 @@ body {
 .pages {
 	position: relative;
 	width: 100%;
-	height: 400px;
+	aspect-ratio: 2;
 	display: flex;
 	box-shadow: 0 0 10px rgba(0, 0, 0, 0.742);
 	// background-color: tomato;
@@ -49,6 +56,7 @@ body {
 	background-color: gold;
 	width: 100%;
 	height: 100%;
+	object-fit: contain;
 
 	&:nth-child(even) {
 		background-color: #000;
@@ -62,6 +70,8 @@ body {
 	position: relative;
 	display: flex;
 	width: 100%;
+	// margin: 0 1em;
+
 	box-shadow: 0 5px 10px rgba(0, 0, 0, 0.742);
 	background-color: #fff;
 }
@@ -116,7 +126,7 @@ body {
 	width: 75px;
 	height: 120px;
 
-	cursor pointer;
+	cursor: pointer;
 	background: none;
 	border: none;
 	font-size: 7rem;
@@ -135,7 +145,6 @@ body {
 	cursor: not-allowed;
 }
 
-
 .page1 {
 	// display: flex;
 	background-color: gold;
@@ -151,7 +160,7 @@ body {
 		flex-direction: column;
 		justify-content: center;
 		align-items: center;
-		margin:0 0.5em;
+		margin: 0 0.5em;
 		// top: 50%;
 		right: 0;
 		width: 55%;
@@ -173,9 +182,13 @@ body {
 		}
 	}
 }
-
+.page-title {
+	text-transform: uppercase;
+	text-align: center;
+	padding: 1em;
+	font-size: 1.8rem;
+}
 .page2 {
-
 	// display: flex;
 	flex-direction: column;
 	// justify-content: center;
@@ -184,20 +197,16 @@ body {
 	color: #fff;
 	overflow-y: auto;
 	&-title {
-		color:gold;
-		text-transform: uppercase;
-		text-align: center;
-		padding: 1em;
-		font-size: 1.8rem;
+		color: gold;
 	}
 	&-main {
 		display: flex;
-&-text {
-	padding: 0 1em;
-	width: 100%;
-	font-size: 1.5rem;
-	text-align: justify;
-}
+		&-text {
+			padding: 0 1em;
+			width: 100%;
+			font-size: 1.5rem;
+			text-align: justify;
+		}
 
 		&-imgs {
 			img {
@@ -212,16 +221,52 @@ body {
 	}
 	&-btn {
 		align-self: center;
-width: 60%;
-font-size: 1.6rem;
-padding: 0.5em 1em;
-margin: 1em 0;
-background: linear-gradient(90deg, rgba(241,255,0,1) 0%, rgba(62,251,175,1) 29%, rgba(67,195,251,1) 59%, rgba(199,126,251,1) 100%);
-color: #fff;
-border-radius: 6px;
-cursor: pointer;
-&:hover {
-	color: #000;
+		width: 60%;
+		font-size: 1.6rem;
+		padding: 0.5em 1em;
+		margin: 1em 0;
+		background: linear-gradient(
+			90deg,
+			rgba(241, 255, 0, 1) 0%,
+			rgba(62, 251, 175, 1) 29%,
+			rgba(67, 195, 251, 1) 59%,
+			rgba(199, 126, 251, 1) 100%
+		);
+		color: #fff;
+		border-radius: 6px;
+		cursor: pointer;
+		&:hover {
+			color: #000;
+		}
+	}
 }
+
+.page3 {
+	flex-direction: column;
+	&-main {
+		display: flex;
+		img {
+			height: 70%;
+		}
+		&-box {
+			position: relative;
+			// display: flex;
+			// flex-direction: column;
+			// justify-content: space-between;
+	
+			&-text {
+				margin: 0 3em;
+				font-size: 1.4rem;
+				text-align: justify;
+				font-weight: 600;
+			}
+			img {
+				position: absolute;
+				bottom: 140px;
+				right: 0;
+				height:50%;
+				filter: opacity(.5);
+			}
+		}
 	}
 }
