@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bee Facts</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;600;800&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="dist/css/style.min.css">
+</head>
+<body>
+
+    <div class="wrapper">
+        <h1 class="title">bee facts 🐝
+        </h1>
+        <div class="pages">
+        <div class="page page1  active-page" data-number="1">
+            <!-- @include 'page1.kit' -->
+        </div>
+        <div class="page page--2"data-number="2">
+        </div>
+        <div class="page page--3"data-number="3">
+        </div>
+        <div class="page page--4"data-number="4">
+        </div>
+        <div class="page page--5"data-number="5">
+        </div>
+        <div class="page page--6"data-number="6">
+        </div>
+        <div class="page page--7"data-number="7">
+        </div>
+        <div class="page page--8"data-number="8">
+        </div>
+        <div class="page page--8"data-number="9">
+        </div>
+    </div>
+       <div class="progress-container"> 
+        <button class="previous-btn btn" disabled><ion-icon name="caret-back-outline"></ion-icon></button>
+        <div class="progress-box">
+            <div class="progress-bar">
+                <div class="progress"></div>
+                <div class="progress-bee"></div></div>
+            
+        </div>
+
+       
+        <button class="next-btn btn"><ion-icon name="caret-forward-outline"></ion-icon></button>
+       </div>
+    </div>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+<script src="dist/js/script.min.js"></script>
+</body>
+</html>
