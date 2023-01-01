@@ -61,16 +61,15 @@ const violet = document.querySelector('.violet')
 const yellow = document.querySelector('.yellow')
 const grey = document.querySelector('.grey')
 const page2Btn = document.querySelector('.page2-btn')
+const page2Movie = document.querySelector('.page2-movie')
+const page2CloseBtn = document.querySelector('.page2-movie-closebtn')
 
 
 
 page2Btn.addEventListener('click', () => {
-	green.style.color = '#6ff96f'
-	blue.style.color = '#4cd3fe'
-	violet.style.color = '#e8aeff'
-	yellow.style.color = 'yellow'
-	grey.style.color = '#c0c0c0'
+	page2Movie.classList.add('movie-active')
 })
+page2CloseBtn.addEventListener('click', () => page2Movie.classList.remove('movie-active'))
 
 
 
