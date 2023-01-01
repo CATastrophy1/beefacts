@@ -55,5 +55,28 @@ const previousPage = () => {
     handlePages()
 }
 
+const green = document.querySelector('.green')
+const blue = document.querySelector('.blue')
+const violet = document.querySelector('.violet')
+const yellow = document.querySelector('.yellow')
+const grey = document.querySelector('.grey')
+const page2Btn = document.querySelector('.page2-btn')
+
+
+
+page2Btn.addEventListener('click', () => {
+	green.style.color = '#6ff96f'
+	blue.style.color = '#4cd3fe'
+	violet.style.color = '#e8aeff'
+	yellow.style.color = 'yellow'
+	grey.style.color = '#c0c0c0'
+})
+
+
+
+
+
+
+
 nextBtn.addEventListener('click', nextPage)
 previousBtn.addEventListener('click', previousPage)

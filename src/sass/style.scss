@@ -55,7 +55,7 @@ body {
 	}
 }
 .active-page {
-	display: block;
+	display: flex;
 }
 
 .progress-container {
@@ -116,7 +116,7 @@ body {
 	width: 75px;
 	height: 120px;
 
-	cursor: url('../img/glove-cur.svg'), pointer;
+	cursor pointer;
 	background: none;
 	border: none;
 	font-size: 7rem;
@@ -137,7 +137,7 @@ body {
 
 
 .page1 {
-	display: flex;
+	// display: flex;
 	background-color: gold;
 	background-image: url('../img/page1-bg.jpg');
 	background-size: cover;
@@ -175,7 +175,8 @@ body {
 }
 
 .page2 {
-	display: flex;
+
+	// display: flex;
 	flex-direction: column;
 	// justify-content: center;
 	// align-items: center;
@@ -203,12 +204,24 @@ body {
 				width: 100%;
 			}
 			&-img2 {
+				display: none;
 				align-self: center;
 				width: 80%;
 			}
 		}
 	}
 	&-btn {
-
+		align-self: center;
+width: 60%;
+font-size: 1.6rem;
+padding: 0.5em 1em;
+margin: 1em 0;
+background: linear-gradient(90deg, rgba(241,255,0,1) 0%, rgba(62,251,175,1) 29%, rgba(67,195,251,1) 59%, rgba(199,126,251,1) 100%);
+color: #fff;
+border-radius: 6px;
+cursor: pointer;
+&:hover {
+	color: #000;
+}
 	}
 }
