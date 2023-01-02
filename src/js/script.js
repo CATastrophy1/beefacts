@@ -8,14 +8,16 @@ let pageNum = 1
 let width = 0
 
 const nextPage = () => {
-	if (pageNum >= 1 && pageNum < page.length) {
+	if (pageNum >= 1 && pageNum < (page.length+1)) {
 		pageNum++
-		width += 12.5
+		width += 100/(page.length-1)
         progressBee.style.transform= 'scalex(1) translate(-50%, -50%)'
 		progress.style.width = `${width}%`
 		progressBee.style.left = `${width}%`
 		
 	}
+	console.log(width);
+	console.log(pageNum);
     disableBtn()
     handlePages()
 }
@@ -43,15 +45,19 @@ const disableBtn = () => {
 }
 
 const previousPage = () => {
-    if (pageNum > 1 && pageNum <= page.length) {
+    if (pageNum > 1 && pageNum <= (page.length+1)) {
 		pageNum--
-		width -= 12.5
+		width -= 100/(page.length-1)
         progressBee.style.transform= 'scalex(-1) translate(50%, -50%)'
 		progress.style.width = `${width}%`
 		progressBee.style.left = `${width}%`
 		
 	}
-    disableBtn()
+
+	console.log(width);
+	console.log(pageNum);
+
+	disableBtn()
     handlePages()
 }
 

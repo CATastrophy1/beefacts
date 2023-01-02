@@ -15,6 +15,7 @@ body {
 	font-family: 'Montserrat', sans-serif;
 	background-image: url('../img/bg.jpg');
 	background-size: cover;
+	font-size: 62.5%;
 	cursor: url('../img/beecur.png'), auto;
 }
 
@@ -204,7 +205,7 @@ body {
 		justify-content: center;
 		align-items: center;
 		background-color: rgba(255, 255, 255, 0.479);
-		transition: display .3s;
+		transition: display 0.3s;
 		&-closebtn {
 			position: absolute;
 			top: 0;
@@ -352,4 +353,128 @@ body {
 }
 
 .page5 {
+	flex-direction: column;
+	// background-color: #fff;
+	&-title {
+		color: #fff;
+	}
+	&-cards {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		&-card {
+			position: relative;
+			width: 200px;
+			height: 280px;
+			margin: 1em;
+			// background-color: #fff;
+			perspective: 1000px;
+			&:hover {
+				.page5-cards-card-img {
+					transform: rotateY(-180deg);
+					opacity: 0;
+				}
+				.page5-cards-card-info {
+					transform: rotateY(0);
+					opacity: 1;
+				}
+			}
+			&-img {
+				position: absolute;
+				width: 100%;
+				height: 100%;
+				background: #fff;
+				transition: transform 1s, opacity 1s;
+				border-radius: 6px;
+				&-title {
+					color: gold;
+					font-size: 1.2rem;
+					padding-top: 0.5em;
+					text-align: center;
+				}
+				&-img {
+					width: 200px;
+					height: 250px;
+					object-fit: contain;
+					padding: 0 1em 1em;
+					&--drone {
+						position: absolute;
+						top: 58%;
+						left: 50%;
+						transform: translate(-50%, -50%);
+						width: 180px;
+					}
+				}
+			}
+			&-info {
+				// display: none;
+				width: 100%;
+				height: 100%;
+				opacity: 0;
+				font-size: 0.8rem;
+				text-align: justify;
+				padding: 1em;
+				transition: transform 1s, opacity 1s;
+				background-color: rgb(195, 195, 195);
+				border-radius: 6px;
+
+				span {
+					font-weight: bold;
+				}
+			}
+		}
+	}
+	small {
+		text-align: center;
+		color: rgb(151, 151, 151);
+		font-size: 0.7rem;
+	}
+}
+
+.page6 {
+	color: #fff;
+	flex-direction: column;
+	&-title {
+		color: gold;
+	}
+	&-cards {
+		display: grid;
+		grid-template-columns: repeat(3, 1fr);
+		grid-template-rows: repeat(2, 1fr);
+		grid-column-gap: 10px;
+		grid-row-gap: 10px;
+		padding: 0 10px;
+		&-card {
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			background-color: #fff;
+			color: gold;
+			height: 150px;
+			border-radius: 6px;
+			transition: transform 0.3s;
+			&:hover {
+				transform: scale(0.93);
+			}
+			&-img {
+				height: 120px;
+				padding: 0.3em;
+			}
+			&-box {
+				padding: 0.3em;
+				&-title {
+					margin-bottom: 0.5em;
+					text-align: center;
+					font-size: 1rem;
+					text-transform: uppercase;
+				}
+				&-text {
+					color: #000;
+					text-align: center;
+					font-size: .65rem;
+					font-weight: 600;
+				}
+			}
+		}
+	}
 }
