@@ -352,6 +352,51 @@ color: gold;
 	}
 }
 
+.page4 {
+	flex-direction: column;
+	background: rgb(255, 252, 216) !important;
+	overflow-y: auto;
+	&-title {
+		color: rgb(78, 78, 78);
+	}
+	&-main {
+		background-color: rgb(247, 247, 144);
+		display: flex;
+			padding: 1em;
+			margin:0 1em 1em;
+			border-radius: 6px;
+
+			&-box {
+				&-img {
+					border-radius: 6px;
+				}
+				&-text {
+					margin-top: 0.3em;
+					text-align: center;
+					font-size: 1rem;
+				}
+			}
+		&-text {
+			width: 100%;
+			padding: .5em 1em;
+			font-size: 1.2rem;
+			background-color: gold;
+			border-radius: 6px;
+			color: #fff;
+			text-align: justify;
+			font-weight: 600;
+			
+			&--first {
+				margin-left: .5em;
+
+			}
+			&--second {
+				margin-right: 0.5em;
+			}
+		}
+	}
+}
+
 .page5 {
 	flex-direction: column;
 	// background-color: #fff;
