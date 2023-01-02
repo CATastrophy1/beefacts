@@ -354,13 +354,13 @@ color: gold;
 
 .page4 {
 	flex-direction: column;
-	background: rgb(255, 252, 216) !important;
+	// background:rgb(247, 247, 144)  !important;
 	overflow-y: auto;
 	&-title {
-		color: rgb(78, 78, 78);
+		color:gold;
 	}
 	&-main {
-		background-color: rgb(247, 247, 144);
+		// background-color: rgb(237, 237, 237);
 		display: flex;
 			padding: 1em;
 			margin:0 1em 1em;
@@ -369,8 +369,10 @@ color: gold;
 			&-box {
 				&-img {
 					border-radius: 6px;
+					// width: 100%;
 				}
 				&-text {
+					width: 100%;
 					margin-top: 0.3em;
 					text-align: center;
 					font-size: 1rem;
@@ -382,7 +384,7 @@ color: gold;
 			font-size: 1.2rem;
 			background-color: gold;
 			border-radius: 6px;
-			color: #fff;
+			color: rgb(0, 0, 0);
 			text-align: justify;
 			font-weight: 600;
 			
