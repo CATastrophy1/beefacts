@@ -20,7 +20,7 @@
         </h1>
         <div class="pages">
             
-        <div class="page page1  active-page" data-number="1">
+        <div class="page page1  " data-number="1">
             <img src="dist/img/beemain.png" alt="pszczola">
 <div class="page1-main">
     <h2 class="page1-main-title">
@@ -179,13 +179,75 @@
     </div>
 
 </div>        </div>
-        <div class="page page7 "data-number="7">
+        <div class="page page7 active-page"data-number="7">
             <h2 class="page-title page7-title">Quiz</h2>
 <form action="" class="page7-form">
+    <div class="page7-form-box active-question" data-count="1">
+    <h3 class="page7-form-box-title">Jak brzmi łacińska nazwa pszczoły miodnej?</h3>
+    <div class="page7-form-box-question">
+        <input id="name" name="name" type="radio" class="page7-form-box-question-input">
+        <label for="name">Apis dorsata</label>
+    </div>
+    <div class="page7-form-box-question">
+        <input id="name" name="name" type="radio" class="page7-form-box-question-input">
+        <label for="name">Apis florea </label>
+    </div>
+    <div class="page7-form-box-question">
+        <input id="name" name="name" type="radio" class="page7-form-box-question-input">
+        <label for="name">Apis mellifera</label>
+    </div>
+</div>
+    <div class="page7-form-box" data-count="2">
+    <h3 class="page7-form-box-title">Jakiego koloru nie widzą pszczoły?</h3>
+    <div class="page7-form-box-question">
+        <input id="color" name="color" type="radio" class="page7-form-box-question-input">
+        <label for="color">Żółtego</label>
+    </div>
+    <div class="page7-form-box-question">
+        <input id="color" name="color" type="radio" class="page7-form-box-question-input">
+        <label for="color">Czerwonego</label>
+    </div>
+    <div class="page7-form-box-question">
+        <input id="color" name="color" type="radio" class="page7-form-box-question-input">
+        <label for="color">Zielonego</label>
+    </div>
+</div>
+    <div class="page7-form-box"data-count="3">
+    <h3 class="page7-form-box-title">Co pszczoły komunikują tańcem wywijanym?
+    </h3>
+    <div class="page7-form-box-question">
+        <input id="dance" name="dance" type="radio" class="page7-form-box-question-input">
+        <label for="dance">Źródło pożytku</label>
+    </div>
+    <div class="page7-form-box-question">
+        <input id="dance" name="dance" type="radio" class="page7-form-box-question-input">
+        <label for="dance">Zagrożenie</label>
+    </div>
+    <div class="page7-form-box-question">
+        <input id="dance" name="dance" type="radio" class="page7-form-box-question-input">
+        <label for="dance">Radość</label>
+    </div>
+</div>
+    <div class="page7-form-box" data-count="4">
+    <h3 class="page7-form-box-title">W jakim wieku pszczoła robotnica zajmuje się budową wosku?</h3>
+    <div class="page7-form-box-question">
+        <input id="age" name="age" type="radio" class="page7-form-box-question-input">
+        <label for="age">1-3 dni</label>
+    </div>
+    <div class="page7-form-box-question">
+        <input id="age" name="age" type="radio" class="page7-form-box-question-input">
+        <label for="age">7-14 dni</label>
+    </div>
+    <div class="page7-form-box-question">
+        <input id="age" name="age" type="radio" class="page7-form-box-question-input">
+        <label for="age">15-18 dni</label>
+    </div>
+</div>
 
 
 </form>
-<button class="page7-btn-prev page7-btn">Cofnij</button>
+<p class="page7-error"></p>
+<button class="page7-btn-prev page7-btn" disabled>Cofnij</button>
 <button class="page7-btn-next page7-btn">Dalej</button>
 <button class="page7-btn-submit page7-btn">Sprawdź</button>        </div>
         <div class="page page8"data-number="8">
@@ -209,6 +271,7 @@
     </div>
     <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
 <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+<script src="dist/js/quiz.min.js"></script>
 <script src="dist/js/script.min.js"></script>
 </body>
 </html>
