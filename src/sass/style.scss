@@ -16,7 +16,7 @@ body {
 	background-image: url('../img/bg.jpg');
 	background-size: cover;
 	font-size: 62.5%;
-	cursor: url('../img/beecur.png'), auto;
+	// cursor: url('../img/beecur.png'), auto;
 }
 
 .wrapper {
@@ -479,7 +479,7 @@ color: gold;
 	small {
 		text-align: center;
 		color: rgb(151, 151, 151);
-		font-size: 0.7rem;
+		font-size: 1rem;
 	}
 }
 
@@ -603,6 +603,9 @@ color: gold;
 		margin-bottom: 1em;
 		font-size: 1rem;
 		color: rgb(247, 41, 5);
+	}
+	&-final {
+		font-size: 2rem;
 	}
 }
  .active-question{
