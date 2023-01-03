@@ -299,6 +299,7 @@ color: gold;
 		display: flex;
 		&-img-box {
 			position: relative;
+			width: 50%;
 			img {
 				position: relative;
 				height: 50%;
@@ -371,7 +372,7 @@ color: gold;
 					border-radius: 6px;
 					// width: 100%;
 					&--second {
-						width: 100%;
+						height: 100%;
 					}
 				}
 				&-text {
@@ -379,6 +380,7 @@ color: gold;
 					margin-top: 0.3em;
 					text-align: center;
 					font-size: 1rem;
+					color: #fff;
 				}
 			}
 		&-text {
