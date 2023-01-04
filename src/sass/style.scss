@@ -372,9 +372,9 @@ color: gold;
 					border-radius: 6px;
 					// width: 100%;
 					&--second {
-						height: 100%;
-						width: 100%;
-						object-fit: cover;
+						height: 50%;
+						width: 50%;
+						object-fit: contain;
 					}
 				}
 				&-text {
