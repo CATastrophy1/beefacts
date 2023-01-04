@@ -372,7 +372,7 @@ color: gold;
 					border-radius: 6px;
 					// width: 100%;
 					&--second {
-						height: 50%;
+						height: 100%;
 						width: 50%;
 						object-fit: contain;
 					}
@@ -401,6 +401,7 @@ color: gold;
 			}
 			&--second {
 				margin-right: 0.5em;
+				width: 100%;
 			}
 		}
 	}
