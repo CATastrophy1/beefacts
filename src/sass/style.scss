@@ -373,6 +373,8 @@ color: gold;
 					// width: 100%;
 					&--second {
 						height: 100%;
+						width: 100%;
+						object-fit: cover;
 					}
 				}
 				&-text {
@@ -380,7 +382,7 @@ color: gold;
 					margin-top: 0.3em;
 					text-align: center;
 					font-size: 1rem;
-					color: #fff;
+					color: gold;
 				}
 			}
 		&-text {
