@@ -371,11 +371,11 @@ color: gold;
 				&-img {
 					border-radius: 6px;
 					// width: 100%;
-					&--second {
-						height: 100%;
-						width: 50%;
-						object-fit: contain;
-					}
+					// &--second {
+					// 	height: 100%;
+					// 	width: 50%;
+					// 	object-fit: contain;
+					// }
 				}
 				&-text {
 					width: 100%;
@@ -401,7 +401,6 @@ color: gold;
 			}
 			&--second {
 				margin-right: 0.5em;
-				width: 100%;
 			}
 		}
 	}
